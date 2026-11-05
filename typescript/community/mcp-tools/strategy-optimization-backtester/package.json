@@ -1,0 +1,42 @@
+{
+  "name": "@arbitrum-vibekit/strategy-optimization-backtester",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "strategy-optimization-backtester": "./dist/index.js"
+  },
+  "scripts": {
+    "prepare": "pnpm build",
+    "prepublishOnly": "pnpm build",
+    "build": "tsc",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "tsx test-mcp.ts"
+  },
+  "keywords": [
+    "mcp",
+    "backtester",
+    "defi",
+    "optimization",
+    "vibekit",
+    "arbitrum"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Strategy Optimization Backtester MCP Server for Vibekit agents",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "catalog:",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "zod": "3.25.76"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "tsx": "catalog:"
+  }
+}

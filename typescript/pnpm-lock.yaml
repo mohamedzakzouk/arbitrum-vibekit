@@ -2194,6 +2194,25 @@ importers:
         specifier: ^1.2.0
         version: 1.6.1(@types/node@20.19.21)(@vitest/ui@3.2.4)(jsdom@28.1.0(@noble/hashes@1.8.0))(lightningcss@1.30.2)(terser@5.44.0)
 
+  community/mcp-tools/strategy-optimization-backtester:
+    dependencies:
+      '@modelcontextprotocol/sdk':
+        specifier: 'catalog:'
+        version: 1.21.1(@cfworker/json-schema@4.1.1)
+      '@types/node':
+        specifier: 'catalog:'
+        version: 22.18.8
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+      zod:
+        specifier: 3.25.76
+        version: 3.25.76
+    devDependencies:
+      tsx:
+        specifier: 'catalog:'
+        version: 4.20.6
+
   community/mcp-tools/tatum-mcp-server:
     dependencies:
       '@modelcontextprotocol/sdk':
@@ -3549,6 +3568,7 @@ packages:
 
   '@browserbasehq/stagehand@1.14.0':
     resolution: {integrity: sha512-Hi/EzgMFWz+FKyepxHTrqfTPjpsuBS4zRy3e9sbMpBgLPv+9c0R+YZEvS7Bw4mTS66QtvvURRT6zgDGFotthVQ==}
+    deprecated: This version is no longer maintained. Please upgrade to the latest version of @browserbasehq/stagehand.
     peerDependencies:
       '@playwright/test': ^1.42.1
       deepmerge: ^4.3.1
@@ -5212,6 +5232,7 @@ packages:
   '@langchain/community@0.3.58':
     resolution: {integrity: sha512-jrMbv1Xz2yqcWtlj+wnMmbagIK6J/fbQdP6R+Az+e+er5CeWy2eZHKBGFL5XYbAzYJdYhAbA4gt8kwVT6oaZfw==}
     engines: {node: '>=18'}
+    deprecated: This package has been deprecated. See https://github.com/langchain-ai/langchainjs-community/issues/61 for more info
     peerDependencies:
       '@arcjet/redact': ^v1.0.0-alpha.23
       '@aws-crypto/sha256-js': ^5.0.0
@@ -23707,7 +23728,7 @@ snapshots:
       pkce-challenge: 5.0.0
       raw-body: 3.0.1
       zod: 3.25.76
-      zod-to-json-schema: 3.24.6(zod@3.25.76)
+      zod-to-json-schema: 3.25.1(zod@3.25.76)
     optionalDependencies:
       '@cfworker/json-schema': 4.1.1
     transitivePeerDependencies:
